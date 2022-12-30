@@ -68,7 +68,7 @@ header>ul a:hover {
 /* Barra lateral*/
 .barra-lateral footer{
     display: none;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     color: transparent;
    
