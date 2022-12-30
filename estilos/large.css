@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+   
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+
+}
+
+header{
+    width: 100vw;
+    margin: auto;
+    box-shadow: 5px 0px 5px grey;
+    text-align: center;
+    justify-content: center;
+   position: absolute;
+    float: top;
+    background-color: white;
+    
+    
+}
+
+header>ul{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+    column-gap: 5px;
+    justify-content:center;
+    
+    
+}
+
+header>ul>li {
+    display: inline-block;
+    padding: 10px 0px ;
+    list-style-type: none;
+   
+}
+
+header>ul a {
+    border-radius:  0px 0px ;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+header>ul a:hover {
+    background-color:lightgray;
+    padding-top: 15px;
+    transition: all .5s , border 0s;
+    border-bottom: 2px solid black;
+}
+
+
+
+.barra-lateral{
+    background-color: blue;
+    float: left;
+    height: 100%;
+    width: 60px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.199);
+    position: relative;
+   position: absolute;
+   transition: all .2s;
+    
+    
+}
+
+.barra-lateral:hover{
+    width: 250px;
+    
+    transition: all .2s;
+
+}
+
+.barra-lateral>h1 {
+    
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    transition: all .5s;
+    text-shadow: 2px 2px 1px rgba(217, 218, 223, 0.404);
+}
+
+.barra-lateral:hover > h1::before{
+    content: 'Turma ';
+    transition: all linear .5s;
+    
+} 
+
+
+.barra-lateral>h1{
+   text-align: center;
+   padding: 15px;
+   
+}
+
+ul.menu-lateral {
+    height: 70%;
+    width: 100%;
+    
+    
+}
+
+.corpo{
+    width: 68vw;
+    max-width: 900px;
+    margin: auto;
+   height: 80vh;
+   padding-top: 80px;
+    overflow-y: auto;
+    
+    
+}
+.corpo::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
+div.aviso{
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    background-color:whitesmoke;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+    padding-top: 2%;
+    padding-left:1% ;
+    padding-right: 1%;
+    border-radius: 8% 8% 0px 0px;
+    margin-bottom: 50px;
+}
+
+.aviso img{
+    width: 90%;
+    display: block;
+    margin: auto;
+
+    
+}
+.aviso h1{
+    text-align: center;
+}
+.aviso p {
+    text-indent: 20px;
+    padding: 10px;
+}
+
+footer {
+    position: static;
+    float: bottom;
+}
