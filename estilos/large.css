@@ -4,7 +4,6 @@
 * {
     margin: 0px;
     padding: 0px;
-   
     
 }
 ::-webkit-scrollbar{
@@ -64,9 +63,29 @@ header>ul a:hover {
 }
 
 
+/* Barra lateral*/
+.barra-lateral footer{
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    color: transparent;
+   
+}
+.barra-lateral:hover>footer{
+     
+    display: inline-block ;
+    background-color: rgba(0, 0, 0, 0.034);
+    color: rgba(255, 255, 255, 0.212);
+    font-family: cursive;
+    width: 100%;
+    padding-block: 10px;
+    box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.192);
+  
+}
 
 .barra-lateral{
     background-color: blue;
+    background-image: linear-gradient(135deg, rgb(0, 81, 255) , rgb(58, 4, 185) );
     float: left;
     height: 100%;
     width: 60px;
@@ -104,13 +123,75 @@ header>ul a:hover {
 .barra-lateral>h1{
    text-align: center;
    padding: 15px;
+   margin-bottom: 15px;
    
 }
+ 
+/* Menu da barra lateral + configurações que o hover da barra afeta no menu*/
 
 ul.menu-lateral {
     height: 70%;
     width: 100%;
+    overflow-y: auto;
     
+}
+
+.barra-lateral:hover>ul>li>a>p{
+    display: inline-block;
+    text-align: left;
+   
+}
+
+.barra-lateral:hover>ul>li>a{
+    width: 80%;
+   transition: all .2s;
+
+    
+}
+
+.menu-lateral li{
+    margin-bottom: 10px;
+
+}
+
+.menu-lateral a{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  vertical-align: middle;
+  margin: auto;
+  width: 35px;
+  padding: 4px 3px;
+  border-radius: 8px;
+  text-align: left;
+  text-decoration: none;
+   background-color: transparent;
+    color: black;
+  
+}
+
+.menu-lateral a:hover{
+    background-color: ;
+    text-decoration: underline;
+    
+   
+    transition: all .3s;
+}
+
+.menu-lateral img {
+    width: 35px;
+    display: block;
+   
+    
+    
+}
+
+.menu-lateral p{
+   display: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+
     
 }
 
