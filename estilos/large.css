@@ -12,7 +12,8 @@
 }
 
 body{
-
+    background: rgb(238,255,249);
+    background: linear-gradient(130deg, rgba(238,255,249,1) 0%, rgba(241,242,247,1) 33%, rgba(244,242,245,1) 69%, rgba(255,238,238,1) 100%);
 }
 
 header{
@@ -237,7 +238,7 @@ div.aviso{
     padding-top: 2%;
     padding-left:1% ;
     padding-right: 1%;
-    border-radius: 8% 8% 0px 0px;
+    border-radius: 8% 8% 8% 0px;
     margin-bottom: 50px;
 }
 
@@ -320,3 +321,38 @@ div.aviso{
     color: rgb(0, 0, 54);
     transition: transform .1s, box-shadow .1s;
 }
+
+/*Acesso dos GPS's*/
+
+.gps-container {
+    
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 30px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    height: 400px;
+   
+   
+}
+.gps-container>a{
+    background-color: white;
+    height: 80px;
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 15px 2px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(153, 153, 190, 0.575);
+    box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.322) ;
+}
+.gps-container>a:hover {
+    transform: translate(2px ,-1px );
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.322) ;
+    text-decoration: underline;
+}
+
