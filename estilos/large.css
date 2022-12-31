@@ -24,6 +24,7 @@ header{
    position: absolute;
     float: top;
     background-color: rgb(252, 252, 252);
+    z-index: 1;
    
     
     
@@ -98,6 +99,7 @@ header>ul a:hover {
    position: absolute;
    transition: all .2s;
    overflow-y: auto;
+   z-index: 2;
     
     
 }
@@ -149,7 +151,7 @@ ul.menu-lateral {
 }
 
 .barra-lateral:hover>ul>li>a{
-    width: 80%;
+    width: 100%;
    transition: all .2s;
 
     
@@ -178,9 +180,9 @@ ul.menu-lateral {
 }
 
 .menu-lateral a:hover{
-    background-color: rgba(255, 255, 255, 0.349);
-    text-decoration: underline;
     
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.301), rgba(255, 255, 255, 0.144) ,transparent);
+    text-decoration: underline;
    
     transition: all .3s;
 }
@@ -251,23 +253,62 @@ div.aviso{
 .provas-atuais , .provas-passadas{
     margin: auto;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 20px ;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.336);
     width: 90%;
-    min-height: 300px;
+    max-width: 600px;
+    min-height: 100px;
     position: relative;
     margin-bottom: 30px;
-    z-index: -1;
-}
-.provas-atuais h1 , .provas-passadas h1{
     display: block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0);
-    border-radius: 20px 20px 0px 0px ;
-    background-color: rgba(0, 0, 255, 0.377);
-    width: 100%;
-    text-align: center;
+   
+    
+}
+.scrollatuaisepassadas{
+   display: grid;
+   row-gap: 8px;
+   max-height: 250px ;
+   grid-auto-flow: row;
+   overflow-y: auto;
+   padding-block: 5px;
+   border-radius: 0px 0px 20px 20px  ;
+   
+   
+  
+  
+   
 }
 
+.provas-atuais h1 , .provas-passadas h1{
+    background-color: lightgrey;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+    margin-bottom: 1px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.274);
+    
+    
+
+}
+
+
+.provas-atuais a , .provas-passadas a{
+   width: 100%;
+   background-color: whitesmoke;
+  box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.068);
+   text-align: center;
+   text-decoration: none;
+   color: black;
+   text-shadow: 1px 1px 0px rgba(128, 128, 128, 0.281);
+   font-size: 1.1em;
+   border-radius: 5px;
+
+   
+}
+
+.provas-atuais a:hover , .provas-passadas a:hover{
+    transform: translate(0, -1px );
+    box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.363);
+    color: rgb(0, 0, 54);
+    transition: transform .1s, box-shadow .1s;
+}
