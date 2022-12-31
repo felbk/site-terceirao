@@ -8,19 +8,19 @@
     box-sizing: border-box;
 }
 ::-webkit-scrollbar{
-    display: none;
+    
 }
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
-    scrollbar-width: auto;
-    scrollbar-color: #0011ff #ffffff;
+    scrollbar-width: 5px;
+    scrollbar-color: #737cff3b #ffffff;
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 1px;
+    width: 6px;
   }
 
   *::-webkit-scrollbar-track {
@@ -28,7 +28,7 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #0011ff42;
+    background-color: hwb(236 70% 0% / 0.568);
     border-radius: 10px;
     border: 0px none #ffffff;
   }
@@ -118,6 +118,7 @@ header>ul a:hover {
     width: 250px;
     
     transition: all .2s;
+    overflow-x: hidden;
 
 }
 
@@ -162,6 +163,9 @@ header>ul a:hover {
     padding-block: 0px 3px;
     box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.192);
   
+}
+.barra-lateral::-webkit-scrollbar{
+    display: none;
 }
 
 
@@ -248,7 +252,7 @@ ul.menu-lateral {
     
 }
 .corpo::-webkit-scrollbar{
-    scroll-behavior: smooth;
+    display: none;
 }
 
 /* avisos */
@@ -401,6 +405,7 @@ div.div-area{
     background-color: white;
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+    margin-bottom: 20px;
 }
 
 .div-area ul{ 
@@ -441,9 +446,6 @@ div.div-area{
     
 
 }
-.videos::-webkit-scrollbar{
-    display: block;
-}
 .videos-item{
     width: 46vw;
     max-width: 560px;
@@ -455,6 +457,42 @@ div.div-area{
     
 }
 .videos-item iframe{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+
+.fotos{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.144);
+    width: 50vw;
+    max-width: 600px;
+    height: 29vw;
+    max-height: 360px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 1px 2px;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    column-gap: 10px;
+   
+    
+
+}
+.fotos-item{
+    width: 46vw;
+    max-width: 560px;
+    height: 26vw;
+    max-height: 330px;
+    display: block;
+    position: relative;
+
+    
+}
+.fotos-item img{
     width: 100%;
     margin: auto;
     height: 100%;
