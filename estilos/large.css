@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -22,7 +23,7 @@ header{
     justify-content: center;
    position: absolute;
     float: top;
-    background-color: white;
+    background-color: rgb(252, 252, 252);
    
     
     
@@ -177,7 +178,7 @@ ul.menu-lateral {
 }
 
 .menu-lateral a:hover{
-    background-color: ;
+    background-color: rgba(255, 255, 255, 0.349);
     text-decoration: underline;
     
    
@@ -200,7 +201,7 @@ ul.menu-lateral {
 
     
 }
-
+/* corpo e conteudo*/
 .corpo{
     width: 68vw;
     max-width: 900px;
@@ -214,6 +215,8 @@ ul.menu-lateral {
 .corpo::-webkit-scrollbar{
     scroll-behavior: smooth;
 }
+
+/* avisos */
 
 div.aviso{
     width: 80%;
@@ -243,7 +246,28 @@ div.aviso{
     padding: 10px;
 }
 
-footer {
-    position: static;
-    float: bottom;
+/* acesso das provas */
+
+.provas-atuais , .provas-passadas{
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.336);
+    width: 90%;
+    min-height: 300px;
+    position: relative;
+    margin-bottom: 30px;
+    z-index: -1;
 }
+.provas-atuais h1 , .provas-passadas h1{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    border-radius: 20px 20px 0px 0px ;
+    background-color: rgba(0, 0, 255, 0.377);
+    width: 100%;
+    text-align: center;
+}
+
