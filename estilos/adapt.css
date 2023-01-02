@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media screen and (max-width:757px) {
+    
+    .barra-lateral{
+        display: none;
+    }
+    .corpo{
+        width: 100%;
+        max-width: 750px;
+    }
+
+
+}

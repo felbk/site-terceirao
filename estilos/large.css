@@ -446,10 +446,10 @@ div.div-area{
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.144);
     width: 50vw;
     max-width: 600px;
-    height: 29vw;
+    height: 60vw;
     max-height: 360px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 45px;
     padding: 1px 2px;
     display: grid;
     grid-auto-flow: column;
@@ -462,7 +462,7 @@ div.div-area{
 .fotos-item{
     width: 46vw;
     max-width: 560px;
-    height: 26vw;
+    height: 52vw;
     max-height: 330px;
     display: block;
     position: relative;
