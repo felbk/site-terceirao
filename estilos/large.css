@@ -446,8 +446,8 @@ div.div-area{
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.144);
     width: 50vw;
     max-width: 600px;
-    height: 60vw;
-    max-height: 360px;
+    height: 56vw;
+    max-height: 600px;
     margin: auto;
     margin-top: 45px;
     padding: 1px 2px;
@@ -463,7 +463,7 @@ div.div-area{
     width: 46vw;
     max-width: 560px;
     height: 52vw;
-    max-height: 330px;
+    max-height: 560px;
     display: block;
     position: relative;
 
