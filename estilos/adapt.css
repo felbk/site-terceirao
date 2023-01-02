@@ -2,14 +2,51 @@
 
 @media screen and (max-width:757px) {
     
-    .barra-lateral{
-        display: none;
+    header{
+        padding-left: 50px;
     }
+    #header-prova{
+        height: auto;
+    }
+
+    .barra-lateral{
+        display: block;
+        height: 50px;
+        width: 50px;
+        overflow-y: hidden;
+        top: 10px;
+        left: 5px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.438);
+        
+    }
+    .barra-lateral>h1{
+        padding: 11px 0px;
+        
+    }
+    
     .corpo{
         width: 100%;
         min-width: 0px;
         max-width: 750px;
     }
+    header{
+        
+    }
+    header>ul {
+        font-size: 3vw;
+        
+
+    }
+    header>ul>li{
+        display: block;
+        padding: 0;
+       
+    }
+    header>ul a{
+        padding: 2vw 6vw;
+    }
+    
 
 
 }

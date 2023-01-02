@@ -33,6 +33,10 @@ header{
     
 }
 
+header>h1{
+    padding-top: 5px;
+}
+
 header>ul{
     width: 50%;
     display: flex;
@@ -89,16 +93,48 @@ header>ul a:hover {
     
 }
 
+/* hover da barra lateral pra pc e tablet*/
 
-
-
-.barra-lateral:hover{
-    width: 250px;
+@media screen and (min-width:768px) {
+    .barra-lateral:hover{
+        width: 250px;
+        
+        transition: all .2s;
+        overflow-x: hidden;
     
-    transition: all .2s;
-    overflow-x: hidden;
+    }
+    .barra-lateral:hover > h1::before{
+        content: 'Turma ';
+        transition: all linear .5s;
+        
+    } 
+    .barra-lateral:hover>footer{
+     
+        display: inline-block ;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.438);
+        font-family: cursive;
+        width: 250px;
+        padding-block: 0px 3px;
+        box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.192);
+      
+    }
+    
+.barra-lateral:hover>ul>li>a>p{
+    display: inline-block;
+    text-align: left;
+   
+}
+
+.barra-lateral:hover>ul>li>a{
+    width: 100%;
+   transition: all .2s;
+
+    
+}
 
 }
+
 
 .barra-lateral>h1 {
     
@@ -117,11 +153,7 @@ header>ul a:hover {
     
 }
 
-.barra-lateral:hover > h1::before{
-    content: 'Turma ';
-    transition: all linear .5s;
-    
-} 
+
 
 .barra-lateral footer{
     display: none;
@@ -131,17 +163,7 @@ header>ul a:hover {
     
    
 }
-.barra-lateral:hover>footer{
-     
-    display: inline-block ;
-    margin-top: 20px;
-    color: rgba(255, 255, 255, 0.438);
-    font-family: cursive;
-    width: 250px;
-    padding-block: 0px 3px;
-    box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.192);
-  
-}
+
 .barra-lateral::-webkit-scrollbar{
     display: none;
 }
@@ -158,18 +180,6 @@ ul.menu-lateral {
     
 }
 
-.barra-lateral:hover>ul>li>a>p{
-    display: inline-block;
-    text-align: left;
-   
-}
-
-.barra-lateral:hover>ul>li>a{
-    width: 100%;
-   transition: all .2s;
-
-    
-}
 
 .menu-lateral li{
     margin-bottom: 10px;
@@ -367,14 +377,44 @@ div.aviso{
 
 fieldset.areas{
     border:none;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    justify-items: center;
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+    padding-top: 5px;
+    
+}
+.areas label{
+    display: block;
+    width: 4em;
+    padding: 3px 4px 1px 4px;
+    margin: auto;
+    border-bottom: 2px solid transparent;
+    
+    
+    
+}
+.areas label p {
+    display: block;
+    font-size: 0.7em;
 }
 
+.areas label img{
+    max-width: 1.5em;
+}
+.areas input{
+    display: none;
+}
 
 
 div.div-area{
    
     width: 100%;
     text-align: center;
+    display: none;
     
     
 }
@@ -388,12 +428,12 @@ div.div-area{
 }
 .materia h2{
     margin-top: 45px;
-    
+
 }
 
 .materia{
     background-color: white;
-    padding: 20px;
+    padding: 40px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
     margin-bottom: 20px;
 }
@@ -458,9 +498,9 @@ div.div-area{
     border-radius: 5px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.144);
     width: 50vw;
-    max-width: 600px;
+    max-width: 550px;
     height: 56vw;
-    max-height: 600px;
+    max-height: 550px;
     margin: auto;
     margin-top: 10px;
     padding: 1px 2px;
@@ -474,9 +514,9 @@ div.div-area{
 }
 .fotos-item{
     width: 46vw;
-    max-width: 560px;
+    max-width: 520px;
     height: 52vw;
-    max-height: 560px;
+    max-height: 520px;
     display: block;
     position: relative;
 

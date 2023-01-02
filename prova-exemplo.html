@@ -16,29 +16,33 @@
 
 </head>
 <body>
-   <header>
+   <header id="header-prova">
         <h1 id="nome-prova">Prova Exemplo</h1>
         <fieldset class="areas">
-            <label for="iext">
-
+            <label id="lbext" for="iext">
+                <img src="imagens/ext.png" alt="Exatas">
+                <p>Exatas</p>
             </label>
-                <input type="radio" name="area" id="iext">   
+                <input onclick="areas()" type="radio" name="area" id="iext">   
 
-            <label for="ihum">
-
+            <label id="lbhum" for="ihum">
+                <img src="imagens/hum.png" alt="Humanas">
+                <p>Humanas</p>
             </label>
-                <input type="radio" name="area" id="ihum">
+                <input onclick="areas()" type="radio" name="area" id="ihum">
 
-            <label for="ibio">
-
+            <label id="lbbio" for="ibio">
+                <img src="imagens/bio.png" alt="Bio">
+                <p>Biológicas</p>
             </label>
-                <input type="radio" name="area" id="ibio">
+                <input onclick="areas()" type="radio" name="area" id="ibio">
 
 
-            <label for="ilin">
-
+            <label id="lblin" for="ilin">
+                <img src="imagens/lin.png" alt="Linguagens">
+                <p>Linguagens</p>
             </label>
-                <input type="radio" name="area" id="ilin">
+                <input onclick="areas()" type="radio" name="area" id="ilin">
 
 
         </fieldset>
@@ -78,7 +82,7 @@
         </ul>
         <footer>Site criado por Felipe Lambak</footer>
     </aside>
-   <nav class="corpo">
+   <nav class="corpo" id="corpo">
        <div id="exatas" class="div-area">
             <div class="materia">
                 <h1>Matemática</h1>
@@ -356,6 +360,48 @@
         
    </nav>
   
+   <script>
+    function areas(){
+        corpo.scrollTop = 0
+        if (iext.checked){
+            exatas.style.display = 'block'
+            lbext.style.backgroundColor = 'lightcyan'
+            lbext.style.borderBottom= '2px solid black'
+        } else{
+            exatas.style.display = 'none'
+            lbext.style.backgroundColor = 'transparent'
+            lbext.style.borderBottom= '2px solid transparent'
+        }
+        if (ihum.checked){
+            humanas.style.display = 'block'
+            lbhum.style.backgroundColor = 'lightcyan'
+            lbhum.style.borderBottom = '2px solid black'
+        } else{
+            humanas.style.display = 'none'
+            lbhum.style.backgroundColor = 'transparent'
+            lbhum.style.borderBottom = '2px solid transparent'
+        }
+        if (ilin.checked){
+            linguagens.style.display = 'block'
+            lblin.style.backgroundColor = 'lightcyan'
+            lblin.style.borderBottom = '2px solid black'
+        } else{
+            linguagens.style.display = 'none'
+            lblin.style.backgroundColor = 'transparent'
+            lblin.style.borderBottom = '2px solid transparent'
+        }
+        if (ibio.checked){
+            biologia.style.display = 'block'
+            lbbio.style.backgroundColor = 'lightcyan'
+            lbbio.style.borderBottom = '2px solid black'
+        } else{
+            biologia.style.display = 'none'
+            lbbio.style.backgroundColor = 'transparent'
+            lbbio.style.borderBottom = '2px solid transparent'
+        }
+    }
+   </script>
+
 </body>
 
 </html>
