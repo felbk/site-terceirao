@@ -172,6 +172,9 @@ header>ul a:hover {
 #barra{
     display: none;
 }
+#close{
+    display: none;
+}
  
 /* Menu da barra lateral + configurações que o hover da barra afeta no menu*/
 

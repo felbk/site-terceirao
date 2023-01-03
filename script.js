@@ -44,16 +44,24 @@ function abrirBarra(){
     document.getElementById('barra-lateral').style.top = '0'
     document.getElementById('barra-lateral').style.left = '0'
     document.getElementById('barra-lateral').style.height = '100vh'
-    document.getElementById('barra-lateral').firstElementChild.textContent = "Turma IX";
+    document.getElementById('barra-lateral').firstElementChild.textContent = "Turma IX"
+    document.getElementById('barra-lateral').style.borderRadius = '0px'
+    document.getElementById('close').style.display = 'block'
+    document.getElementById('turma-ix').style.fontSize = '1.8em'
+    
     
 } 
 
-    //document.getElementById('barra-lateral').style.width = '10vw'
-    //document.getElementById('barra-lateral').style.top = '1vw'
-    //document.getElementById('barra-lateral').style.left = '1vw'
-   // document.getElementById('barra-lateral').style.height = '10vw'
-    //document.getElementById('barra-lateral').firstElementChild.textContent = "IX";
+}
+function fecharBarra(){
 
 
-   
+document.getElementById('barra-lateral').style.width = '10vw'
+    document.getElementById('barra-lateral').style.top = '1vw'
+    document.getElementById('barra-lateral').style.left = '1vw'
+    document.getElementById('barra-lateral').style.height = '10vw'
+    document.getElementById('barra-lateral').firstElementChild.textContent = "IX";
+    document.getElementById('turma-ix').style.fontSize = '4.5vw'
+    document.getElementById('close').style.display = 'none'
+    document.getElementById('barra-lateral').style.borderRadius = '30px'
 }
