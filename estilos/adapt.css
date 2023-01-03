@@ -166,7 +166,7 @@ ul.menu-lateral {
         width: 100%;
         min-width: 0px;
         max-width: 750px;
-        padding-top: 16vw;
+        padding-top: 20vw;
     }
     header{
         
@@ -216,6 +216,9 @@ ul.menu-lateral {
     
     .areas label img{
         max-width: 1.5em;
+    }
+    div.div-area{
+        padding-top: 20px ;
     }
     .div-area ul{ 
         background-color: aliceblue;
