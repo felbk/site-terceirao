@@ -1,34 +1,154 @@
 @charset "UTF-8";
 
-@media screen and (max-width:757px) {
+@media screen and (max-width:767px) {
     
     header{
-        padding-left: 50px;
+        
     }
     #header-prova{
         height: auto;
+        width: 100%;
+    }
+    #nome-prova{
+        font-size: 7vw;
+        
+        margin: auto;
     }
 
     .barra-lateral{
         display: block;
-        height: 50px;
-        width: 50px;
+        height: 10vw;
+        width: 10vw;
         overflow-y: hidden;
-        top: 10px;
-        left: 5px;
+        top: 1vw;
+        left: 1vw;
         border-radius: 30px;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.438);
         
     }
+    .barra-lateral{
+        
+        
+        transition: all .2s;
+        overflow-x: hidden;
+    
+    }
+    
+    .barra-lateral>footer{
+     
+        display: inline-block ;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.438);
+        font-family: cursive;
+        width: 100%;
+        padding-block: 0px 3px;
+        text-align: center;
+        box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.068);
+      
+    }
+    
+.barra-lateral>ul>li>a>p{
+    display: block;
+    text-align: center;
+    margin: auto;
+   
+}
+
+.barra-lateral>ul>li>a{
+    width: 100%;
+   transition: all .2s;
+   
+
+    
+}
+    #barra{
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.233);
+        height: 10vw;
+        width: 10vw;
+        z-index: 3;
+        top: 1vw;
+        left: 1vw;
+    }
     .barra-lateral>h1{
-        padding: 11px 0px;
+        padding: 2.5vw 0px;
+        font-size: 4.5vw;
         
     }
+    /* Menu da barra lateral + configurações que o hover da barra afeta no menu*/
+
+ul.menu-lateral {
+    height: 70%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    
+}
+
+
+.menu-lateral li{
+    margin-bottom: 10px;
+    width: 50%;
+    max-width: 250px;
+    margin: auto;
+    list-style: none;
+    
+
+}
+
+.menu-lateral a{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  vertical-align: middle;
+  margin: auto;
+  width: 50%;
+  max-width: 250px;
+  padding: 4px 3px;
+  border-radius: 8px;
+  text-align: left;
+  text-decoration: none;
+   background-color: transparent;
+    color: black;
+    margin-left: 8px;
+    background-color: rgba(240, 248, 255, 0.068);
+    margin-top: 2px;
+  
+}
+
+.menu-lateral a:hover{
+    
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.301), rgba(255, 255, 255, 0.144) ,transparent);
+    text-decoration: underline;
+   
+    transition: all .3s;
+}
+
+
+.menu-lateral img {
+    width: 35px;
+    display: block;
+   
+    
+    
+}
+
+.menu-lateral p{
+   display: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+
+    
+}
     
     .corpo{
         width: 100%;
         min-width: 0px;
         max-width: 750px;
+        padding-top: 16vw;
     }
     header{
         
@@ -41,10 +161,131 @@
     header>ul>li{
         display: block;
         padding: 0;
+       padding: 2vw 0vw;
        
     }
     header>ul a{
         padding: 2vw 6vw;
+    }
+
+    fieldset.areas{
+        border:none;
+        display: block;
+        
+        
+        column-gap: 10px;
+        justify-items: center;
+        width: 99vw;
+        max-width: 300px;
+        margin: auto;
+        padding-top: 0 ;
+        
+    }
+    .areas label{
+        display: inline-block;
+        width: 4em;
+        padding: 0;
+        margin: auto;
+        border-bottom: 2px solid transparent;
+        
+        
+        
+    }
+    .areas label p {
+        display: block;
+        font-size: 0.7em;
+    }
+    
+    .areas label img{
+        max-width: 1.5em;
+    }
+    .div-area ul{ 
+        background-color: aliceblue;
+        width: max-content;
+        max-width: 90%;
+        margin: auto;
+        list-style-position: inside;
+        text-align: left;
+        columns: 2;
+        padding: 15px;
+    
+        border-radius: 7px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
+        text-shadow: 1px 1px 0px rgba(170, 170, 170, 0.288);
+        line-height: 1.3em;
+        font-size: 0.9em;
+        
+    }
+
+    .videos{
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.144);
+        width: 75vw;
+        max-width: 600px;
+        height: 46vw;
+        max-height: 360px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 1px 2px;
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        column-gap: 10px;
+       
+        
+    
+    }
+    .videos-item{
+        width: 69vw;
+        max-width: 560px;
+        height: 40vw;
+        max-height: 330px;
+        display: block;
+        position: relative;
+    
+        
+    }
+    .videos-item iframe{
+        width: 100%;
+        margin: auto;
+        height: 100%;
+    }
+    
+    
+    .fotos{
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.144);
+        width: 80vw;
+        max-width: 550px;
+        height: 88vw;
+        max-height: 550px;
+        margin: auto;
+        margin-top: 10px;
+        padding: 1px 2px;
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        column-gap: 10px;
+       
+        
+    
+    }
+    .fotos-item{
+        width: 74vw;
+        max-width: 520px;
+        height: 80vw;
+        max-height: 520px;
+        display: block;
+        position: relative;
+    
+        
+    }
+    .fotos-item img{
+        width: 100%;
+        margin: auto;
+        height: 100%;
     }
     
 

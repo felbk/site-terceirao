@@ -168,14 +168,18 @@ header>ul a:hover {
     display: none;
 }
 
-
+/*botao para mobile*/
+#barra{
+    display: none;
+}
  
 /* Menu da barra lateral + configurações que o hover da barra afeta no menu*/
 
 ul.menu-lateral {
     height: 70%;
     width: 100%;
-    
+    overflow-x: hidden;
+    overflow-y: auto;
     
     
 }

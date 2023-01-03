@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turma IX / Prova Exemplo</title>
 
-   
+    
     <link rel="stylesheet" href="estilos/large.css" media="all">
     <link rel="stylesheet" href="estilos/adapt.css" media="all">
 
@@ -48,7 +48,8 @@
         </fieldset>
         
    </header>
-   <aside class="barra-lateral">
+   <button  id="barra" onclick="abrirBarra()"></button>
+   <aside class="barra-lateral" id="barra-lateral">
         <h1>IX</h1>
         <ul class="menu-lateral">
             <li>
@@ -360,46 +361,7 @@
         
    </nav>
   
-   <script>
-    function areas(){
-        corpo.scrollTop = 0
-        if (iext.checked){
-            exatas.style.display = 'block'
-            lbext.style.backgroundColor = 'lightcyan'
-            lbext.style.borderBottom= '2px solid black'
-        } else{
-            exatas.style.display = 'none'
-            lbext.style.backgroundColor = 'transparent'
-            lbext.style.borderBottom= '2px solid transparent'
-        }
-        if (ihum.checked){
-            humanas.style.display = 'block'
-            lbhum.style.backgroundColor = 'lightcyan'
-            lbhum.style.borderBottom = '2px solid black'
-        } else{
-            humanas.style.display = 'none'
-            lbhum.style.backgroundColor = 'transparent'
-            lbhum.style.borderBottom = '2px solid transparent'
-        }
-        if (ilin.checked){
-            linguagens.style.display = 'block'
-            lblin.style.backgroundColor = 'lightcyan'
-            lblin.style.borderBottom = '2px solid black'
-        } else{
-            linguagens.style.display = 'none'
-            lblin.style.backgroundColor = 'transparent'
-            lblin.style.borderBottom = '2px solid transparent'
-        }
-        if (ibio.checked){
-            biologia.style.display = 'block'
-            lbbio.style.backgroundColor = 'lightcyan'
-            lbbio.style.borderBottom = '2px solid black'
-        } else{
-            biologia.style.display = 'none'
-            lbbio.style.backgroundColor = 'transparent'
-            lbbio.style.borderBottom = '2px solid transparent'
-        }
-    }
+   <script type="text/javascript" src="script.js">
    </script>
 
 </body>
