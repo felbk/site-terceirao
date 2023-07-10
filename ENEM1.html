@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turma IX / Enem D1 </title>
+
+    
+    <link rel="stylesheet" href="estilos/large.css" media="all">
+    <link rel="stylesheet" href="estilos/adapt.css" media="all">
+
+    <style>
+        
+    </style>
+
+</head>
+<body>
+   <header id="header-prova">
+        <h1 id="nome-prova">ENEM 1° dia </h1>
+        <fieldset class="areas">
+            <label id="lbext" for="iext" style="display: none;">
+                <img src="imagens/ext.png" alt="Exatas">
+                <p>Exatas</p>
+            </label>
+                <input onclick="areas()" type="radio" name="area" id="iext">   
+
+            <label id="lbhum" for="ihum">
+                <img src="imagens/hum.png" alt="Humanas">
+                <p>Humanas</p>
+            </label>
+                <input onclick="areas()" type="radio" name="area" id="ihum">
+
+            <label id="lbbio" for="ibio" style="display: none;">
+                <img src="imagens/bio.png" alt="Bio">
+                <p>Biológicas</p>
+            </label>
+                <input onclick="areas()" type="radio" name="area" id="ibio">
+
+
+            <label id="lblin" for="ilin">
+                <img src="imagens/lin.png" alt="Linguagens">
+                <p>Linguagens</p>
+            </label>
+                <input onclick="areas()" type="radio" name="area" id="ilin">
+
+
+        </fieldset>
+        
+   </header>
+   <button  id="barra" onclick="abrirBarra()"></button>
+   <button  id="close" onclick="fecharBarra()"></button>
+   <aside class="barra-lateral" id="barra-lateral">
+        <h1 id="turma-ix">IX</h1>
+        <ul class="menu-lateral">
+            <li>
+                <a href="index.html">
+                    <img src="imagens/home-300x300.png" alt="home">
+
+                    <p>Home</p>
+                </a>
+                
+                
+            </li>
+            
+            <li>
+                <a href="gps.html">
+                    <img src="imagens/gps.png" alt="gps">
+
+                    <p>GPS</p>
+                </a>
+                
+            </li>
+
+            <li>
+                <a href="provas.html">
+                    <img src="imagens/test.png" alt="gps">
+
+                    <p>Provas</p>
+                </a>
+                
+            </li>
+
+            <li>
+                <a href="https://id.gruposaltaedu.com/" target="_blank">
+                    <img src="imagens/plural.png" alt="plural">
+
+                    <p>Plurall</p>
+                </a>
+                
+            </li>
+        
+        </ul>
+        <footer>Site criado por Felipe Lambak</footer>
+    </aside>
+   <nav class="corpo" id="corpo">
+       
+       <div id="humanas" class="div-area">
+            
+            <div class="materia">
+                <h1>Geografia</h1>
+               
+                
+            </div>
+            <div class="materia">
+                <h1>História</h1>
+                
+
+            </div>
+           <div class="materia">
+            <h1>Sociologia</h1>
+            
+
+           </div>
+           <div class="materia">
+            <h1>Filosofia</h1>
+            
+           </div>
+
+
+       </div>
+       <div class="div-area" id="exatas">      
+       </div>
+       <div class="div-area" id="biologia">
+       </div>
+       <div id="linguagens" class="div-area">
+         
+          <div class="materia">
+            <h1>Literatura</h1>
+            
+            <ul>
+                <li>Modernismo</li>
+                <li>Quinhentismo</li>
+                <li>Barroco</li>
+                <li>Realismo</li>
+                <li>Naturalismo</li>
+            </ul>
+
+            <div class="videos">
+
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/D8xQel1nhxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/WULOzFYZ30g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/cMVti1H1ASE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/pkc2MP-sHT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+
+               
+
+            </div>
+
+          </div>
+
+          <div class="materia">
+            <h1>Português</h1>
+
+            <ul>
+                <li>Gêneros Textuais</li>
+                <li>Norma Culta x Popular</li>
+                <li>Figuras de Linguagem</li>
+                <li>Semântica</li>
+                
+            </ul>
+
+            <div class="videos">
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/asXfsCTMK1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/6fBOVygtNoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/xfjSzZf6JA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+                <div class="videos-item">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/dfkvdIGqZvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+              
+            </div>
+
+          </div>
+         
+
+       </div>
+      
+        
+   </nav>
+  
+   <script type="text/javascript" src="script.js">
+   </script>
+
+</body>
+
+</html>
